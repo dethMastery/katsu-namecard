@@ -7,11 +7,11 @@
   
   text-align: center;
   justify-content: center;
+  background-color: rgba(46, 47, 47, .8);
 }
 
 .card {
   width: 18rem;
-  height: auto;
 
   margin-left: auto;
   margin-right: auto;
@@ -37,6 +37,65 @@
   color: #2e2f2f;
 }
 
-.cardContent h3 {
+.cardContent ,.mainComponent {
+  padding-bottom: 1rem;
+}
+
+.cardContent .mainComponent .headText {
   margin: 0;
+  padding-bottom: .5rem;
+  font-weight: 400;
+}
+
+.cardContent .mainComponent .subText {
+  padding: 0 .5rem;
+  padding-top: .5rem;
+  margin: 0;
+  opacity: .5;
+}
+
+.cardContent .contactIcon {
+  font-size: 20px;
+}
+
+.cardContent .contactIcon a {
+  color: #2e2f2f;
+  transition: all .3s;
+}
+
+.cardContent .contactIcon a:hover {
+  opacity: .7;
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+}
+
+.facebook {
+  color: #1877F2 !important;
+}
+
+.twitter {
+  color: #1D9AF1 !important;
+}
+
+a.cardFooter {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  transition: all .3s;
+
+  background-color: #2e2f2f;
+  color: whitesmoke;
+  padding: 1rem 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+a.cardFooter:hover {
+  opacity: .8;
 }
